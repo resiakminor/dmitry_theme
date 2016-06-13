@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Portfolio Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+
+  <body>
+<!--  <?php
+// define variables and set to empty values
+$nameErr = $emailErr = $genderErr = $websiteErr = "";
+$name = $email = $gender = $message = $website = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  if (empty($_POST["name"])) {
+    $nameErr = "Name is required";
+  } else {
+    $name = test_input($_POST["name"]);
+    // check if name only contains letters and whitespace
+    if (!preg_match("/^[a-zA-Z ]*$/",$name)) {
+      $nameErr = "Only letters and white space allowed"; 
+    }
+  }
+  
+  if (empty($_POST["email"])) {
+    $emailErr = "Email is required";
+  } else {
+    $email = test_input($_POST["email"]);
+    // check if e-mail address is well-formed
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+      $emailErr = "Invalid email format"; 
+    }
+  }
+
+  if (empty($_POST["message"])) {
+    $message = "";
+  } else {
+    $message = test_input($_POST["message"]);
+  }
+}
+
+function test_input($data) {
+  $data = trim($data);
+  $data = stripslashes($data);
+  $data = htmlspecialchars($data);
+  return $data;
+}
+?> -->
+<!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top header">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Top</a></li>
+            <li><a href="#work">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Begin page content -->
+        <section class="jumbotron jumbotron-fluid">
+          <div class="container-fluid">
+            <div class="row">
+           <div class="accordian col-md-12 col-md-offset-1">
+             <div class="accordian-item item">
+               <img src="http://i.dailymail.co.uk/i/pix/2014/09/01/article-2739095-20F640A300000578-604_634x422.jpg" class="img" alt="Old Cat">
+             </div>
+             <div class="accordian-item item-1">
+               <img src="http://i.dailymail.co.uk/i/pix/2014/09/01/article-2739095-20F640A300000578-604_634x422.jpg" class="img" alt="Old Cat">
+             </div>
+             <div class="accordian-item item-2">
+               <img src="http://i.dailymail.co.uk/i/pix/2014/09/01/article-2739095-20F640A300000578-604_634x422.jpg" class="img" alt="Old Cat">
+             </div>
+             <div class="accordian-item item-3">
+               <img src="http://i.dailymail.co.uk/i/pix/2014/09/01/article-2739095-20F640A300000578-604_634x422.jpg" class="img" alt="Old Cat">
+             </div>
+             <div class="accordian-item item-4">
+               <img src="http://i.dailymail.co.uk/i/pix/2014/09/01/article-2739095-20F640A300000578-604_634x422.jpg" class="img" alt="Old Cat">
+             </div>
+             <div class="accordian-item item-5">
+               <img src="http://i.dailymail.co.uk/i/pix/2014/09/01/article-2739095-20F640A300000578-604_634x422.jpg" class="img" alt="Old Cat">
+             </div>
+             <div class="accordian-item item-6">
+               <img src="http://i.dailymail.co.uk/i/pix/2014/09/01/article-2739095-20F640A300000578-604_634x422.jpg" class="img" alt="Old Cat">
+             </div>
+             <div class="accordian-item item-7">
+               <img src="http://i.dailymail.co.uk/i/pix/2014/09/01/article-2739095-20F640A300000578-604_634x422.jpg" class="img" alt="Old Cat">
+             </div>
+             <div class="accordian-item item-8">
+               <img src="http://i.dailymail.co.uk/i/pix/2014/09/01/article-2739095-20F640A300000578-604_634x422.jpg" class="img" alt="Old Cat">
+             </div>
+             <div class="accordian-item item-9">
+               <img src="http://i.dailymail.co.uk/i/pix/2014/09/01/article-2739095-20F640A300000578-604_634x422.jpg" class="img" alt="Old Cat">
+             </div>
+             <div class="accordian-item item-10">
+               <img src="http://i.dailymail.co.uk/i/pix/2014/09/01/article-2739095-20F640A300000578-604_634x422.jpg" class="img" alt="Old Cat">
+             </div>
+           </div>
+           <div class="col-md-4 col-md-offset-6 intro front">
+             <p>I'm a cat. A really old cat in fact. This is my sad story.</p>
+           </div>
+          </div>
+          </div>
+         </section>
+        <section id="work" class="container">
+          <div>
+            <h1 class="text-center cont section-title">Portfolio</h1>
+          </div>
+          <div class="portfolio">
+            <div class="row">
+              <div class="col-md-6">
+                <img src="http://www.findcatnames.com/wp-content/uploads/2015/01/aristocats-names-2.jpg" class="port-img">
+              </div>
+              <div class="col-md-6">
+                <img src="http://www.findcatnames.com/wp-content/uploads/2015/01/aristocats-names-2.jpg" class="port-img">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="http://www.findcatnames.com/wp-content/uploads/2015/01/aristocats-names-2.jpg" class="port-img">
+              </div>
+              <div class="col-md-6">
+                <img src="http://www.findcatnames.com/wp-content/uploads/2015/01/aristocats-names-2.jpg" class="port-img">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="http://www.findcatnames.com/wp-content/uploads/2015/01/aristocats-names-2.jpg" class="port-img">
+              </div>
+              <div class="col-md-6">
+                <img src="http://www.findcatnames.com/wp-content/uploads/2015/01/aristocats-names-2.jpg" class="port-img">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <img src="http://www.findcatnames.com/wp-content/uploads/2015/01/aristocats-names-2.jpg" class="port-img">
+              </div>
+              <div class="col-md-6">
+                <img src="http://www.findcatnames.com/wp-content/uploads/2015/01/aristocats-names-2.jpg" class="port-img">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="container">
+          <div>
+            <h1 class="text-center cont section-title">Contact Me</h1>
+          </div>
+            <div class="row form">
+              <div class="col-md-6">
+                <!-- <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>"> -->
+                <!-- Name --> 
+                <input type="text" name="name" placeholder="<?php echo $name;?>" class="full">
+                <span class="error">* <?php echo $nameErr;?></span>
+                <br><br>
+                <!-- E-mail -->
+                <input type="text" name="email" placeholder="<?php echo $email;?>" class="full">
+                <span class="error">* <?php echo $emailErr;?></span>
+                <br><br>
+                <!-- Message: input <?php echo $message;?> inbetween textarea tags --> 
+                <textarea name="message" rows="5" cols="40" placeholder="Message" class="full"></textarea>
+                <br><br>
+                <input type="submit" name="submit" value="Submit">  
+              </form>
+            </div>
+            <div class="col-md-6">
+              <p>Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume, tips on how to solve your sudoku, random questions about the universe and the meaning of life, or even if only for some nice Fika here in stunning Toronto... just feel free to drop me a line anytime. I promise to reply A.S.A.P.</p>
+            </div>
+          </div>
+        </section>
+    <footer class="footer navbar navbar-fixed-bottom">
+      <div class="container">
+        <p class="text-muted text-center">Coded by resiakminor, <del>&copy;</del> no rights reserved</p>
+      </div>
+    </footer>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
